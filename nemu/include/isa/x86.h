@@ -24,7 +24,6 @@ typedef struct {
       uint16_t _16;
       uint8_t _8[2];
     };
-    uint32_t val;
   }gpr[8];
 
   /* Do NOT change the order of the GPRs' definitions. */
