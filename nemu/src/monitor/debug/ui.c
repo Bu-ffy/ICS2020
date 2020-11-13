@@ -54,7 +54,7 @@ static int cmd_si(char *args){
   }
 }
 
-static void print_regster(){
+static void print_register(){
   for(int i=0;i<8;i++){
     printf("%s\t%#012X\t%d\n",reg_name(i,4),reg_l(i),reg_l(i));
   }
@@ -84,7 +84,7 @@ static int cmd_info(char *args){
 
 //扫描内存
 static int cmd_scan(int num,char *str){
-  
+
 }
 
 static struct {
@@ -98,7 +98,7 @@ static struct {
 
   /* TODO: Add more commands */
   {"si", "Single instruction execuiton", cmd_si },      //单步执行
-  {"info", "Print the regsters or watchpoints", cmd_info },    //打印寄存器状态或者监视点信息
+  {"info", "Print the registers or watchpoints", cmd_info },    //打印寄存器状态或者监视点信息
   {"x", "Scan the memory", cmd_scan }       //扫描内存
 };
 
